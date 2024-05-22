@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Original</title>
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  <nav class="navbar">
+    <h2 class="title">Original</h2>
+    <ul class="menu">
+      <li class="active" href="#store">Kроссовки</li>
+      <li class="active">варварв</li>
+      <li class="active">О Нас</li>
+    </ul>
+    <ul class="menu-icons">
+      <li><i class="bi bi-person"></i></li>
+      <li><i class="bi bi-search"></i></li>
+      <li class="basket-icon" onclick="toggleModel()">
+        <i class="bi bi-bag"></i>
+        <span class="basket-count">2</span>
+      </li>
+    </ul>
+  </nav>
+  <section class="slider">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/books/0175275.jpeg" class="d-block w-100" alt="BURAYA FOTO GÖZÜKMEZSE DİYE YAZI YAZ">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/nike_jdi_06.png" class="d-block w-100" alt="BURAYA FOTO GÖZÜKMEZSE DİYE YAZI YAZ">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/maxresdefault.jpg" class="d-block w-100" alt="BURAYA FOTO GÖZÜKMEZSE DİYE YAZI YAZ">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section class="store my-5">
+    <div class="liste">
+      <ul>
+        <li class="tek"><i class="bi bi-filter-left"></i></li>
+        <li>All</li>
+        <li>Nike</li>
+        <li>Jordan</li>
+        <li>Adidas</li>
+        <li>Puma</li>
+        <li>New Balance</li>
+        <li>Dolce Gabbana</li>
+      </ul>
+    </div>
+    <div class="row book__list">
+      <div class="col-5 offset-1 my-5">
+        <div class="row book__card">
+          <div class="col-6 mr-50">
+            <img class="img-fluid shadow foto" src="/assets/images/books/air-jordan-1-.jpeg" alt="Nike Zoom Vomero 5">
+          </div>
+          <div class="col-6 d-flex flex-column justify-content-between">
+            <div class="shoes__detail">
+              <span class="fos gray fs-5">Nike</span><br>
+              <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+              <span class="shoes__star-rate">
+                <i class="bi bi-star-fill active"></i>
+                <i class="bi bi-star-fill active"></i>
+                <i class="bi bi-star-fill active"></i>
+                <i class="bi bi-star-fill active"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="gray">1.150 rewiew</span>
+              </span>
+            </div>
+            <p class="text__description fos gray mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+              Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+              cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+              eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+            </p>
+            <div class="mb-4 mt-3">
+              <span class="black fw-bold fs-5">24.999 руб.</span>
+              <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+            </div>
+            <button class="btn__purple">ADD BUTTON</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 my-5">       
+         <div class="row">
+        <div class="col-6 ml-5">
+          <img class="img-fluid shadow foto" src="/assets/images/books/air-jordan-7-.jpeg" alt="Nike Zoom Vomero 5">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-between">
+          <div class="shoes__detail">
+            <span class="fos gray fs-5">Nike</span><br>
+            <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+            <span class="shoes__star-rate">
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill"></i>
+              <span class="gray">1.150 rewiew</span>
+            </span>
+          </div>
+          <p class="text__description fos gray mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+            Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+            cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+            eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+          </p>
+          <div class="mb-4 mt-3">
+            <span class="black fw-bold fs-5">24.999 руб.</span>
+            <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+          </div>
+          <button class="btn__purple">ADD BUTTON</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 offset-1 mb-5">
+      <div class="row">
+        <div class="col-6 ml-5">
+          <img class="img-fluid shadow foto" src="/assets/images/books/adidas-1.jpeg" alt="Nike Zoom Vomero 5">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-between">
+          <div class="shoes__detail">
+            <span class="fos gray fs-5">Nike</span><br>
+            <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+            <span class="shoes__star-rate">
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill active"></i>
+              <i class="bi bi-star-fill"></i>
+              <span class="gray">1.150 rewiew</span>
+            </span>
+          </div>
+          <p class="text__description fos gray mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+            Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+            cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+            eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+          </p>
+          <div class="mb-4 mt-3">
+            <span class="black fw-bold fs-5">24.999 руб.</span>
+            <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+          </div>
+          <button class="btn__purple">ADD BUTTON</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 mb-5">       
+       <div class="row">
+      <div class="col-6 ml-5">
+        <img class="img-fluid shadow foto" src="/assets/images/books/adiadas-2.jpeg" alt="Nike Zoom Vomero 5">
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-between">
+        <div class="shoes__detail">
+          <span class="fos gray fs-5">Nike</span><br>
+          <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+          <span class="shoes__star-rate">
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill"></i>
+            <span class="gray">1.150 rewiew</span>
+          </span>
+        </div>
+        <p class="text__description fos gray mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+          Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+          cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+          eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+        </p>
+        <div class="mb-4 mt-3">
+          <span class="black fw-bold fs-5">24.999 руб.</span>
+          <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+        </div>
+        <button class="btn__purple">ADD BUTTON</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-5 offset-1 mb-5">
+    <div class="row ">
+      <div class="col-6 ml-5">
+        <img class="img-fluid shadow foto" src="/assets/images/books/nike-1.png" alt="Nike Zoom Vomero 5">
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-between">
+        <div class="shoes__detail">
+          <span class="fos gray fs-5">Nike</span><br>
+          <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+          <span class="shoes__star-rate">
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill active"></i>
+            <i class="bi bi-star-fill"></i>
+            <span class="gray">1.150 rewiew</span>
+          </span>
+        </div>
+        <p class="text__description fos gray mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+          Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+          cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+          eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+        </p>
+        <div class="mb-4 mt-3">
+          <span class="black fw-bold fs-5">24.999 руб.</span>
+          <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+        </div>
+        <button class="btn__purple">ADD BUTTON</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-5 mb-5">       
+     <div class="row cart__body-item">
+    <div class="col-6 ml-5">
+      <img class="img-fluid shadow foto" src="/assets/images/books/nike-2.jpeg" alt="Nike Zoom Vomero 5">
+    </div>
+    <div class="col-6 d-flex flex-column justify-content-between">
+      <div class="shoes__detail">
+        <span class="fos gray fs-5">Nike</span><br>
+        <span class="fs-4 fw-bold mb-6">air-jordan-1</span><br>
+        <span class="shoes__star-rate">
+          <i class="bi bi-star-fill active"></i>
+          <i class="bi bi-star-fill active"></i>
+          <i class="bi bi-star-fill active"></i>
+          <i class="bi bi-star-fill active"></i>
+          <i class="bi bi-star-fill"></i>
+          <span class="gray">1.150 rewiew</span>
+        </span>
+      </div>
+      <p class="text__description fos gray mt-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, impedit? Fugiat quidem fuga vero aliquam.
+        Earum explicabo ab deleniti in similique? Provident, nemo? Aliquid nesciunt, quasi eveniet aperiam soluta
+        cupiditate inventore similique voluptatem nemo. Ipsum perferendis ut sapiente! Nemo quis distinctio,
+        eligendi beatae modi id dolorum ab perspiciatis similique quisquam.
+      </p>
+      <div class="mb-4 mt-3">
+        <span class="black fw-bold fs-5">24.999 руб.</span>
+        <span class=" fw-bold fs-5 old__price">29.999 руб.</span>
+      </div>
+      <button class="btn__purple">ADD BUTTON</button>
+    </div>
+  </div>
+</div>
+  </section>
+  <div class="basket__model">
+    <div class="basket__items">
+      <i class="bi bi-x" onclick="toggleModel()"></i>
+      <h2 class="basket__title">Your items</h2>
+      <ul class="basket__list" style="height: 450px; overflow: scroll; width: 450px;">
+        <li class="my-3">
+          <img src="/assets/images/books/air-jordan-1-.jpeg" alt="" width="100" height="120">
+          <div class="basket__item-info">
+            <h4 class="shoes__name">air-jordan-1</h4>
+            <span class="shoes__price">24 999 руб</span><br>
+            <span class="shoes__remove">remove</span>
+          </div>
+          <div class="shoes__count">
+            <span class="dicrease">-</span>
+            <span class="black fw-bold my-5">1</span>
+            <span class="increase">+</span>
+          </div>
+        </li>
+        <li class="my-3">
+          <img src="/assets/images/books/air-jordan-7-.jpeg" alt="" width="100" height="120">
+          <div class="basket__item-info">
+            <h4 class="shoes__name">air-jordan-1</h4>
+            <span class="shoes__price">24 999 руб</span><br>
+            <span class="shoes__remove">remove</span>
+          </div>
+          <div class="shoes__count">
+            <span class="dicrease">-</span>
+            <span class="black fw-bold my-5">1</span>
+            <span class="increase">+</span>
+          </div>
+        </li>
+        
+      </ul>
+      <div class="basket__total">
+        <span class="fw-bold black mb-3 fs-4 ta-center">Total :49 998</span>
+      <button class="btn__purple-1">BUY</button>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

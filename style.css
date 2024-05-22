@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #1c2a39;
+  --gray: #5c6a79;
+  --purple: #4c3db2;
+  --transition: all 250ms ease-in-out;
+}
+ /* navbar*/
+
+.navbar{
+  height: 120px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.menu, .menu-icons{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.menu .active{
+  color: var(--black);
+  font-weight: bold;
+}
+.menu li, .menu-icons li{
+  margin: 0 10px;
+}
+
+.menu-icons li{
+  color: var(--black);
+}
+
+.basket-icon{
+  position: relative;
+}
+.basket-count{
+  position: absolute;
+  right: -0.7rem;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--black);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* slider */
+.slider{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+}
+
+.slider img{
+  height: 600px;
+}
+
+/*store*/
+.store{
+  width: 100%;
+  margin-left: 20px;
+  position: relative;
+  margin-right: 500px;
+}
+
+.foto{
+  height: 394px;
+  width: 314px;
+  
+}
+
+.fos{
+  font-family: "Open Sans", sans-serif;
+}
+
+.gray{
+  color: var(--gray);
+}
+
+.black{
+  color: var(--black);
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.shoes__star-rate .bi-star-fill{
+  color: var(--black);
+  font-size: 1.2rem;
+ 
+}
+
+.shoes__star-rate .bi-star-fill.active{
+  color: #f9d71c;
+}
+
+.text__description{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.old__price{
+  color: #bdbdbd;
+  text-decoration: line-through;
+}
+
+.btn__purple{
+  cursor: pointer;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  transition: var(--transition);
+  height: 50px;
+}
+
+.btn__purple:hover{
+  background-color: var(--purple);
+  color: #fff;
+}
+
+/*filter*/
+
+.filter{
+  margin-left: 400px;
+  background-color: var(--black);
+  width: 846px;
+  height: 200px;
+  position: absolute;
+  
+}
+
+.liste{
+  list-style: none;
+  display: block;
+}
+
+.liste li{
+  display: inline;
+  margin: 10px;
+  position:  relative center;
+  color: var(--gray);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.liste li.tek{
+  margin-left: 100px;
+}
+
+.liste li:hover{
+  color: var(--purple);
+}
+
+/*sepet*/
+
+.basket__model{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition:var(--transition);
+}
+
+.basket__model.active{
+  opacity: 100%;
+  z-index: 999;
+}
+
+.basket__items{
+  position: relative;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  float: right;
+ opacity: 95%;
+ transition: var(--transition);
+ z-index: 999;
+}
+
+.basket__model.active .basket__items{
+  width:500px;
+  opacity: 100%;
+}
+
+.basket__items .bi-x{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.basket__title{
+  color: var(--black);
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.basket.list{
+  list-style-type: none;
+  padding: 0 5px;
+  margin-top: 3rem;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+
+.basket__list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket__item-info .shoes__name{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.basket__item-info .shoes__price{
+  font-size: 16px;
+}
+
+.basket__item-info .shoes__remove{
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.shoes__count{
+  font-size: 1.5rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.shoes__count .increase{
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.shoes__count .dicrease{
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.shoes__count .increase, 
+.dicrease {
+  color: var(--purple);
+  cursor: pointer;
+
+}
+
+.btn__purple-1{
+  cursor: pointer;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  transition: all 400ms ease-in-out;
+  height: 50px;
+  width: 100%;
+}
+
+.btn__purple-1:hover{
+  background-color: var(--purple);
+  color: #fff;
+}
+
+/*sepet*/
+
+.basket__total{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 1rem;
+  align-items: center;
+  width: inherit;
+  right: 0;
+  z-index: -1000;
+}
+
+.basket__total.active{
+  opacity: 100%;
+  z-index: 1500;
+}
